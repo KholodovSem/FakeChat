@@ -1,0 +1,22 @@
+.chatHeader {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 15px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(236, 236, 236, 0.41);
+}
+
+.userPhoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    margin-right: 20px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
