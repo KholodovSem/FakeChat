@@ -1,0 +1,33 @@
+.userPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  margin-right: 10px;
+}
+
+.messageWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.myMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.text{
+  max-width: 300px;
+
+  padding: 15px 20px;
+  border-radius: 25px;
+
+  background-color: lightgrey;
+}
+
+.textSecondColor {
+  @extend .text;
+
+  background-color: lightblue;
+}
