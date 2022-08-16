@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import Message from './Message';
 import { GetJokeFromChuckNorris } from '../helpers/GetRandomJoke';
-import history from '../../data/history.json';
 import { randomDelay } from '../helpers/GetRandomDelay';
+import history from '../../data/chats.json';
+import s from './Chat.module.scss';
+import SendMessageForm from './SendMessageForm';
+import ChatHeader from './ChatHeader';
 
 const Chat = () => {
-  const [newMessage, setNewMessage] = useState([]);
-  const [newAnswer, setNewAnswer] = useState([]);
+  const [messageHistory, setMessageHistory] = useState(history[0]);
+  const { messages } = messageHistory;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,54 +17,43 @@ const Chat = () => {
     const time = new Date().toLocaleTimeString('en-US');
     const date = new Date().toLocaleDateString('en-US');
     const textMessage = e.currentTarget.elements.message.value;
+    e.currentTarget.elements.message.value = '';
 
-    setNewMessage((prevState) => ([...prevState, {
-      textMessage,
-      date,
-      time,
-    }]));
+    setMessageHistory((prevState) => ({
+      ...prevState,
+      messages: [...prevState.messages, {
+        myMessage: true,
+        textMessage,
+        date,
+        time,
+      }],
+    }));
 
-    setTimeout(() => GetJokeFromChuckNorris().then(({data: {value}}) => setNewAnswer(prevState => ([...prevState,{
-      textMessage: value,
-      date: new Date().toLocaleDateString('en-US'),
-      time: new Date().toLocaleTimeString('en-US'),
-    }]))), randomDelay(10000, 15000))
+    setTimeout(() => GetJokeFromChuckNorris().then(({ data: { value } }) => setMessageHistory(prevState => ({
+      ...prevState,
+      messages: [...prevState.messages, {
+        myMessage: false,
+        textMessage: value,
+        date: new Date().toLocaleDateString('en-US'),
+        time: new Date().toLocaleTimeString('en-US'),
+      }],
+    }))), randomDelay(10000, 15000));
   };
-
-  const filter = (id) => {
-    return history.filter((person) => person.id === id)[0];
-  };
-
-  filter();
 
   return (
-    <div>
-      <ul>
-        {filter(2).messages.map(message =>
-          (<Message message={message.textMessage} date={message.date} time={message.time} key={message.time}/>),
+    <div className={s.chat}>
+      <ChatHeader src={history[0].image} name={history[0].name} />
+      <div className={s.chatHistory}>
+        {messages.map(message =>
+          (<Message
+            {...message}
+            src={history[0].image}
+            name={history[0].name}
+            key={message.time}
+          />),
         )}
-        {newAnswer.length > 0 &&
-          newAnswer.map(message => (
-            <Message message={message.textMessage} time={message.time} date={message.date} key={message.time}/>
-          ))
-        }
-      </ul>
-      <ul>
-        {filter(1).messages.map(message =>
-          (<Message message={message.textMessage} date={message.date} time={message.time} key={message.time}/>),
-        )}
-        {newMessage.length > 0 &&
-          newMessage.map(message => (
-            <Message message={message.textMessage} time={message.time} date={message.date} key={message.time}/>
-          ))
-          }
-      </ul>
-      <form onSubmit={handleSubmit}>
-        <input name="message"/>
-        <button type='submit'>
-          Send
-        </button>
-      </form>
+        <SendMessageForm handleSubmit={handleSubmit} />
+      </div>
     </div>
   );
 };

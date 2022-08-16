@@ -5,37 +5,3 @@
   width: 35%;
 }
 
-.menuHeader {
-  display: flex;
-  flex-direction: column;
-
-  padding: 10px 10px 20px 10px;
-
-  background-color: rgba(236, 236, 236, 0.41);
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  border-right: 1px solid rgba(0, 0, 0, 0.15);
-}
-
-.inputLabel {
-  position: relative;
-}
-
-.menuUserIcon {
-  margin-bottom: 25px;
-}
-
-.menuLoupIcon {
-  position: absolute;
-  top: 7px;
-  left: 16px;
-}
-
-.menuInput {
-  width: 100%;
-
-  padding: 8px 0 8px 50px;
-
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-}

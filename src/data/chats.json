@@ -1,15 +1,23 @@
 [
   {
-    "id": 2,
-    "toId": 1,
-    "name": "Alice Freeman",
+    "id": 1,
+    "name": "Josefina",
+    "image": "https://i.postimg.cc/xdm7nq0x/Josefina.jpg",
     "messages": [
       {
+        "myMessage": false,
         "textMessage": "Hey, how are you?",
         "date": "15/08/2020",
         "time": "10:59:14 AM"
       },
       {
+        "myMessage": true,
+        "textMessage": "I'm fine, are you?",
+        "date": "15/08/2020",
+        "time": "11:10:54 AM"
+      },
+      {
+        "myMessage": false,
         "textMessage": "Good. I am fine, too.",
         "date": "15/08/2020",
         "time": "11:19:02 AM"
@@ -17,9 +25,9 @@
     ]
   },
   {
-    "id": 1,
-    "toId": 2,
-    "name": "Sem Kholodov",
+    "id": 2,
+    "name": "Alice Freeman",
+    "image": "",
     "messages": [
       {
         "textMessage": "I'm fine, are you?",
