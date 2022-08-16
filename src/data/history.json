@@ -1,0 +1,31 @@
+[
+  {
+    "id": 2,
+    "toId": 1,
+    "name": "Alice Freeman",
+    "messages": [
+      {
+        "textMessage": "Hey, how are you?",
+        "date": "15/08/2020",
+        "time": "10:59:14 AM"
+      },
+      {
+        "textMessage": "Good. I am fine, too.",
+        "date": "15/08/2020",
+        "time": "11:19:02 AM"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "toId": 2,
+    "name": "Sem Kholodov",
+    "messages": [
+      {
+        "textMessage": "I'm fine, are you?",
+        "date": "15/08/2020",
+        "time": "11:10:54 AM"
+      }
+    ]
+  }
+]
