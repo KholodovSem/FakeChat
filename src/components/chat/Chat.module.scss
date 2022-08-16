@@ -1,0 +1,12 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.chatHistory {
+  padding: 15px 10px;
+}
