@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Reenbit-test-task/static/css/main.2976ff2b.css",
+    "main.js": "/Reenbit-test-task/static/js/main.ed37c79a.js",
+    "index.html": "/Reenbit-test-task/index.html",
+    "main.2976ff2b.css.map": "/Reenbit-test-task/static/css/main.2976ff2b.css.map",
+    "main.ed37c79a.js.map": "/Reenbit-test-task/static/js/main.ed37c79a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2976ff2b.css",
+    "static/js/main.ed37c79a.js"
+  ]
+}
