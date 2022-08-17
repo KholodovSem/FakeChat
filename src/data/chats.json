@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "name": "Josefina",
     "image": "https://svgshare.com/i/k9U.svg",
     "messages": [
@@ -28,7 +28,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "name": "Alice Freeman",
     "image": "https://svgshare.com/i/k9G.svg",
     "messages": [
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 2,
     "name": "Chris",
     "image": "https://svgshare.com/i/kAc.svg",
     "messages": [
@@ -63,7 +63,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "Mustafa",
     "image": "https://svgshare.com/i/kAd.svg",
     "messages": []

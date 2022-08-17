@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Message from './Message';
 import { GetJokeFromChuckNorris } from '../helpers/GetRandomJoke';
 import { randomDelay } from '../helpers/GetRandomDelay';
@@ -10,9 +10,13 @@ import { getDate } from '../helpers/GetDate';
 import { getTime } from '../helpers/GetTime';
 import { nanoid } from 'nanoid';
 
-const Chat = () => {
-  const [messageHistory, setMessageHistory] = useState(history[0]);
-  const { messages } = messageHistory;
+const Chat = ({ id }) => {
+  const [messageHistory, setMessageHistory] = useState(null);
+  // const { messages } = messageHistory;
+
+  useEffect(() => {
+    setMessageHistory(history[id]);
+  }, [id]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,15 +47,26 @@ const Chat = () => {
     }))), randomDelay(10000, 15000));
   };
 
+  if(messageHistory === null || messageHistory === undefined){
+    return (
+      <div className={s.chat}>
+        <ChatHeader />
+        <div className={s.chatHistory}>
+          <h1 className={s.title}>Choose person</h1>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className={s.chat}>
-      <ChatHeader src={history[0].image} name={history[0].name} />
+      <ChatHeader src={messageHistory.image} name={messageHistory.name} />
       <div className={s.chatHistory}>
-        {messages.map(message =>
+        {messageHistory.messages.map(message =>
           (<Message
             {...message}
-            src={history[0].image}
-            name={history[0].name}
+            src={messageHistory.image}
+            name={messageHistory.name}
             key={message.id}
           />),
         )}

@@ -3,7 +3,7 @@ import MenuHeader from './MenuHeader';
 import Contact from './Contact';
 import history from '../../data/chats.json';
 
-const MessengerMenu = () => {
+const MessengerMenu = ({handleClick}) => {
   return (
     <aside className={s.messengerMenu}>
       <MenuHeader />
@@ -16,6 +16,7 @@ const MessengerMenu = () => {
             date={person.messages.length > 0 ? person.messages[person.messages.length - 1].date : null}
             textMessage={person.messages.length > 0 ? person.messages[person.messages.length - 1].textMessage : null}
             id={person.id}
+            handleClick={handleClick}
           />
         ))}
       </div>
