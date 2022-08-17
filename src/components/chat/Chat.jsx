@@ -6,6 +6,9 @@ import history from '../../data/chats.json';
 import s from './Chat.module.scss';
 import SendMessageForm from './SendMessageForm';
 import ChatHeader from './ChatHeader';
+import { getDate } from '../helpers/GetDate';
+import { getTime } from '../helpers/GetTime';
+import { nanoid } from 'nanoid';
 
 const Chat = () => {
   const [messageHistory, setMessageHistory] = useState(history[0]);
@@ -14,28 +17,28 @@ const Chat = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const time = new Date().toLocaleTimeString('en-US');
-    const date = new Date().toLocaleDateString('en-US');
     const textMessage = e.currentTarget.elements.message.value;
     e.currentTarget.elements.message.value = '';
 
     setMessageHistory((prevState) => ({
       ...prevState,
       messages: [...prevState.messages, {
+        id: nanoid(),
         myMessage: true,
         textMessage,
-        date,
-        time,
+        date: getDate(),
+        time: getTime(),
       }],
     }));
 
     setTimeout(() => GetJokeFromChuckNorris().then(({ data: { value } }) => setMessageHistory(prevState => ({
       ...prevState,
       messages: [...prevState.messages, {
+        id: nanoid(),
         myMessage: false,
         textMessage: value,
-        date: new Date().toLocaleDateString('en-US'),
-        time: new Date().toLocaleTimeString('en-US'),
+        date: getDate(),
+        time: getTime(),
       }],
     }))), randomDelay(10000, 15000));
   };
@@ -49,11 +52,11 @@ const Chat = () => {
             {...message}
             src={history[0].image}
             name={history[0].name}
-            key={message.time}
+            key={message.id}
           />),
         )}
-        <SendMessageForm handleSubmit={handleSubmit} />
       </div>
+      <SendMessageForm handleSubmit={handleSubmit} />
     </div>
   );
 };
