@@ -1,22 +1,18 @@
-import { useEffect, useState } from 'react';
 import Message from './Message';
 import { GetJokeFromChuckNorris } from '../helpers/GetRandomJoke';
 import { randomDelay } from '../helpers/GetRandomDelay';
-import history from '../../data/chats.json';
 import s from './Chat.module.scss';
 import SendMessageForm from './SendMessageForm';
 import ChatHeader from './ChatHeader';
 import { getDate } from '../helpers/GetDate';
 import { getTime } from '../helpers/GetTime';
 import { nanoid } from 'nanoid';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToChatHistory } from '../../store/history-action';
 
 const Chat = ({ id }) => {
-  const [messageHistory, setMessageHistory] = useState(null);
-  // const { messages } = messageHistory;
-
-  useEffect(() => {
-    setMessageHistory(history[id]);
-  }, [id]);
+  const messageHistory = useSelector(state => state[id]);
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -24,30 +20,27 @@ const Chat = ({ id }) => {
     const textMessage = e.currentTarget.elements.message.value;
     e.currentTarget.elements.message.value = '';
 
-    setMessageHistory((prevState) => ({
-      ...prevState,
-      messages: [...prevState.messages, {
-        id: nanoid(),
-        myMessage: true,
-        textMessage,
-        date: getDate(),
-        time: getTime(),
-      }],
-    }));
 
-    setTimeout(() => GetJokeFromChuckNorris().then(({ data: { value } }) => setMessageHistory(prevState => ({
-      ...prevState,
-      messages: [...prevState.messages, {
+    dispatch(addToChatHistory(id, {
+      id: nanoid(),
+      myMessage: true,
+      textMessage,
+      date: getDate(),
+      time: getTime(),
+    }))
+
+    setTimeout(() => GetJokeFromChuckNorris().then(({ data: { value } }) =>
+      dispatch(addToChatHistory(id, {
         id: nanoid(),
         myMessage: false,
         textMessage: value,
         date: getDate(),
         time: getTime(),
-      }],
-    }))), randomDelay(10000, 15000));
+      }))
+    ), randomDelay(10000, 15000));
   };
 
-  if(messageHistory === null || messageHistory === undefined){
+  if(messageHistory === undefined){
     return (
       <div className={s.chat}>
         <ChatHeader />
