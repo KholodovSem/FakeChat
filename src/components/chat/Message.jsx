@@ -9,7 +9,7 @@ const Message = ({ textMessage, date, time, src, name, myMessage }) => {
           {textMessage}
         </p>
       </div>
-      <span>{`${date}, ${time}`}</span>
+      <span className={myMessage ? s.dateAndTime : s.dateAndTimeSecondVariable}>{`${date}, ${time}`}</span>
     </div>
   );
 };

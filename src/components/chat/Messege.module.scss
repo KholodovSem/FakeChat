@@ -17,12 +17,14 @@
   align-items: end;
 }
 
-.text{
+.text {
   max-width: 300px;
 
+  margin-top: 0;
+  margin-bottom: 9px;
   padding: 15px 20px;
-  border-radius: 25px;
 
+  border-radius: 25px;
   background-color: lightgrey;
 }
 
@@ -30,4 +32,14 @@
   @extend .text;
 
   background-color: lightblue;
+}
+
+.dateAndTime {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.dateAndTimeSecondVariable {
+  @extend .dateAndTime;
+  margin-left: 65px;
 }
