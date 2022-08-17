@@ -1,10 +1,13 @@
 .menuHeader {
+  position: fixed;
   display: flex;
   flex-direction: column;
 
+  width: calc(35% - 32px);
+
   padding: 10px 10px 20px 10px;
 
-  background-color: rgba(236, 236, 236, 0.41);
+  background-color: rgba(249, 249, 249, 1);
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
@@ -35,3 +38,4 @@
     outline: 1px solid rgba(0, 0, 0, 0.25);
   }
 }
+
