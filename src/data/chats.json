@@ -2,38 +2,70 @@
   {
     "id": 1,
     "name": "Josefina",
-    "image": "https://i.postimg.cc/xdm7nq0x/Josefina.jpg",
+    "image": "https://svgshare.com/i/k9U.svg",
     "messages": [
       {
+        "id": "ZPrjPLEop0qUaoMk4GBFS",
         "myMessage": false,
         "textMessage": "Hey, how are you?",
-        "date": "15/08/2020",
-        "time": "10:59:14 AM"
+        "date": "15/08/22",
+        "time": "10:59 AM"
       },
       {
+        "id": "RRrjPLEop0qUaoMk4GBFS",
         "myMessage": true,
         "textMessage": "I'm fine, are you?",
-        "date": "15/08/2020",
-        "time": "11:10:54 AM"
+        "date": "15/08/22",
+        "time": "11:10 AM"
       },
       {
+        "id": "FArjPLEop0qUaoMk4ZBFS",
         "myMessage": false,
         "textMessage": "Good. I am fine, too.",
-        "date": "15/08/2020",
-        "time": "11:19:02 AM"
+        "date": "15/08/22",
+        "time": "11:19 AM"
       }
     ]
   },
   {
     "id": 2,
     "name": "Alice Freeman",
-    "image": "",
+    "image": "https://svgshare.com/i/k9G.svg",
     "messages": [
       {
-        "textMessage": "I'm fine, are you?",
-        "date": "15/08/2020",
-        "time": "11:10:54 AM"
+        "id": "RRrjPLEop0q92aoMk4GBFS",
+        "myMessage": false,
+        "textMessage": "Hi",
+        "date": "12/08/22",
+        "time": "9:10 AM"
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "Chris",
+    "image": "https://svgshare.com/i/kAc.svg",
+    "messages": [
+      {
+        "id": "RRrjPLEop0q92aoMk4152",
+        "myMessage": false,
+        "textMessage": "Hey, are you ready?",
+        "date": "13/08/22",
+        "time": "5:10 PM"
+      },
+      {
+        "id": "RRrjP321op0q92aoMk4152",
+        "myMessage": true,
+        "textMessage": "I am always ready",
+        "date": "13/08/22",
+        "time": "5:30 PM"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Mustafa",
+    "image": "https://svgshare.com/i/kAd.svg",
+    "messages": []
   }
 ]
