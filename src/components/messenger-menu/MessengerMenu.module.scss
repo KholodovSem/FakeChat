@@ -25,6 +25,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
+
+  &:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+  }
 }
 
 .addIcon {

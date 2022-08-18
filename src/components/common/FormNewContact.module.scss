@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 10px;
+}
+
+.inputLabel {
+  position: relative;
+
+  &:not(:last-of-type){
+    margin-bottom: 20px;
+  }
+}
+
+.modalInput{
+  padding: 5px 0 5px 50px;
+
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  &:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
+
+.modalBtn {
+  margin-top: 30px;
+
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 15px;
+
+  transition: background-color 250ms linear 0ms;
+  &:hover {
+    background-color: #b6f3b6;
+  }
+}
+
+.inputIconRename {
+  position: absolute;
+  top: 2px;
+  left: 7px
+}
+
+.inputIconPhoto {
+  position: absolute;
+  top: 4px;
+  left: 9px
+}

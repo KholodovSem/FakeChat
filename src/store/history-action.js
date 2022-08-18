@@ -8,3 +8,12 @@ export const addToChatHistory = createAction('history/add', (id, newMessage) => 
     }
   }
 });
+
+export const addToContactsList = createAction('contacts/add', (name, image) => {
+  return {
+    payload: {
+      name,
+      image,
+    }
+  }
+});
