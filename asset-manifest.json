@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/Reenbit-test-task/static/css/main.2976ff2b.css",
-    "main.js": "/Reenbit-test-task/static/js/main.ed37c79a.js",
+    "main.css": "/Reenbit-test-task/static/css/main.56f86291.css",
+    "main.js": "/Reenbit-test-task/static/js/main.95b2cfbb.js",
+    "static/media/user.svg": "/Reenbit-test-task/static/media/user.aea0183bcc50a1a087c846b8c42a4d38.svg",
     "index.html": "/Reenbit-test-task/index.html",
-    "main.2976ff2b.css.map": "/Reenbit-test-task/static/css/main.2976ff2b.css.map",
-    "main.ed37c79a.js.map": "/Reenbit-test-task/static/js/main.ed37c79a.js.map"
+    "static/media/loupe.svg": "/Reenbit-test-task/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
+    "static/media/paper-plane.svg": "/Reenbit-test-task/static/media/paper-plane.44046163ff3fe70ce9ed75d2eb4398dc.svg",
+    "static/media/Add icon.svg": "/Reenbit-test-task/static/media/Add icon.d4221fbcaad057844b64e13f51bbeff1.svg",
+    "static/media/close-icon.svg": "/Reenbit-test-task/static/media/close-icon.162f0299d90033f17db338a16c78f41f.svg",
+    "static/media/photo-icon.svg": "/Reenbit-test-task/static/media/photo-icon.d582720d8fbd95e9b458187d1da983a6.svg",
+    "static/media/rename-icon.svg": "/Reenbit-test-task/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
+    "main.56f86291.css.map": "/Reenbit-test-task/static/css/main.56f86291.css.map",
+    "main.95b2cfbb.js.map": "/Reenbit-test-task/static/js/main.95b2cfbb.js.map"
   },
   "entrypoints": [
-    "static/css/main.2976ff2b.css",
-    "static/js/main.ed37c79a.js"
+    "static/css/main.56f86291.css",
+    "static/js/main.95b2cfbb.js"
   ]
 }
