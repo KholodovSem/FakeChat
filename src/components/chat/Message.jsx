@@ -1,4 +1,6 @@
 import s from './Messege.module.scss';
+import { formatDate } from '../helpers/GetDate';
+import { getTime } from '../helpers/GetTime';
 
 const Message = ({ textMessage, date, time, src, name, myMessage }) => {
   return (
@@ -9,7 +11,7 @@ const Message = ({ textMessage, date, time, src, name, myMessage }) => {
           {textMessage}
         </p>
       </div>
-      <span className={myMessage ? s.dateAndTime : s.dateAndTimeSecondVariable}>{`${date}, ${time}`}</span>
+      <span className={myMessage ? s.dateAndTime : s.dateAndTimeSecondVariable}>{`${formatDate(date)}, ${getTime(time)}`}</span>
     </div>
   );
 };

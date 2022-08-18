@@ -4,11 +4,10 @@ import { randomDelay } from '../helpers/GetRandomDelay';
 import s from './Chat.module.scss';
 import SendMessageForm from './SendMessageForm';
 import ChatHeader from './ChatHeader';
-import { getDate } from '../helpers/GetDate';
-import { getTime } from '../helpers/GetTime';
 import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToChatHistory } from '../../store/history-action';
+import { options } from '../helpers/GetDate';
 
 const Chat = ({ id }) => {
   const messageHistory = useSelector(state => state[id]);
@@ -25,8 +24,8 @@ const Chat = ({ id }) => {
       id: nanoid(),
       myMessage: true,
       textMessage,
-      date: getDate(),
-      time: getTime(),
+      date: new Date().toLocaleString("en-US", options),
+      time: new Date().toLocaleTimeString(),
     }))
 
     setTimeout(() => GetJokeFromChuckNorris().then(({ data: { value } }) =>
@@ -34,8 +33,8 @@ const Chat = ({ id }) => {
         id: nanoid(),
         myMessage: false,
         textMessage: value,
-        date: getDate(),
-        time: getTime(),
+        date: new Date().toLocaleString("en-US", options),
+        time: new Date().toLocaleTimeString(),
       }))
     ), randomDelay(10000, 15000));
   };

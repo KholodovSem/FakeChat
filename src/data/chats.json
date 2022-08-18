@@ -8,22 +8,22 @@
         "id": "ZPrjPLEop0qUaoMk4GBFS",
         "myMessage": false,
         "textMessage": "Hey, how are you?",
-        "date": "15/08/22",
-        "time": "10:59 AM"
+        "date": "Mon, Aug 15, 2022",
+        "time": "10:59:12"
       },
       {
         "id": "RRrjPLEop0qUaoMk4GBFS",
         "myMessage": true,
         "textMessage": "I'm fine, are you?",
-        "date": "15/08/22",
-        "time": "11:10 AM"
+        "date": "Mon, Aug 15, 2022",
+        "time": "11:10:31"
       },
       {
         "id": "FArjPLEop0qUaoMk4ZBFS",
         "myMessage": false,
         "textMessage": "Good. I am fine, too.",
-        "date": "15/08/22",
-        "time": "11:19 AM"
+        "date": "Mon, Aug 15, 2022",
+        "time": "11:19:53"
       }
     ]
   },
@@ -36,8 +36,8 @@
         "id": "RRrjPLEop0q92aoMk4GBFS",
         "myMessage": false,
         "textMessage": "Hi",
-        "date": "12/08/22",
-        "time": "9:10 AM"
+        "date": "Fri, Aug 12, 2022",
+        "time": "09:10:10"
       }
     ]
   },
@@ -50,15 +50,15 @@
         "id": "RRrjPLEop0q92aoMk4152",
         "myMessage": false,
         "textMessage": "Hey, are you ready?",
-        "date": "13/08/22",
-        "time": "5:10 PM"
+        "date": "Sat, Aug 13, 2022",
+        "time": "17:10:21"
       },
       {
         "id": "RRrjP321op0q92aoMk4152",
         "myMessage": true,
         "textMessage": "I am always ready",
-        "date": "13/08/22",
-        "time": "5:30 PM"
+        "date": "Sat, Aug 13, 2022",
+        "time": "17:30:34"
       }
     ]
   },
