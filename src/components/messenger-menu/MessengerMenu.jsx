@@ -27,9 +27,13 @@ const MessengerMenu = ({ handleClick }) => {
     setShowModal(!showModal);
   };
 
-  const notify = () => {
-    toast.success(`Contact successfully added`)
-  }
+  const successNotify = () => {
+    toast.success(`Contact successfully added`);
+  };
+
+  const errorNotify = () => {
+    toast.error(`Such contact already exists`);
+  };
 
   return (
     <aside className={s.messengerMenu}>
@@ -54,7 +58,7 @@ const MessengerMenu = ({ handleClick }) => {
       </div>
       {showModal ?
         <Modal onToggleModal={onToggleModal}>
-          <FormNewContact onToggleModal={onToggleModal} notify={notify} />
+          <FormNewContact onToggleModal={onToggleModal} successNotify={successNotify} errorNotify={errorNotify}/>
         </Modal>
         : null}
       <ToastContainer />

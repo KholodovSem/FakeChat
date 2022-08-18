@@ -39,3 +39,28 @@
   }
 }
 
+.closeBtn {
+  position: absolute;
+  top: 3px;
+  right: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:active .closeIcon {
+    width: 20px;
+
+    position: absolute;
+    top: 6px;
+    right: 8px;
+  }
+}
+
+.closeIcon {
+  width: 30px;
+
+  opacity: 0.4;
+}
+
