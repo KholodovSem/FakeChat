@@ -1,12 +1,4 @@
-export const options = {
-  year: 'numeric',
-  month: 'short',
-  day: 'numeric',
-  weekday: 'short',
-  timezone: 'UTC',
-};
-
-export function formatDate(date) {
+export default function formatDate(date) {
 
   let dd = new Date(date).getDate();
   if (dd < 10) dd = '0' + dd;

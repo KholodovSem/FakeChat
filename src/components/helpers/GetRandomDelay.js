@@ -1,3 +1,3 @@
-export function randomDelay(min, max) {
+export default function randomDelay(min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }

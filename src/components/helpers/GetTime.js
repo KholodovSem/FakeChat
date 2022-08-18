@@ -1,4 +1,4 @@
-export function getTime (time){
+export default function getTime (time){
   const timeWithSeconds = new Date().toLocaleTimeString();
 
   if(timeWithSeconds.length === 8){

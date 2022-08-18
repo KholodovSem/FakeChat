@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-export function GetJokeFromChuckNorris () {
+export default function GetJokeFromChuckNorris () {
  return axios.get("https://api.chucknorris.io/jokes/random")
 }

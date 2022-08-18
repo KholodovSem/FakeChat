@@ -1,13 +1,9 @@
-import Message from './Message';
-import { GetJokeFromChuckNorris } from '../helpers/GetRandomJoke';
-import { randomDelay } from '../helpers/GetRandomDelay';
-import s from './Chat.module.scss';
-import SendMessageForm from './SendMessageForm';
-import ChatHeader from './ChatHeader';
-import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
+import { nanoid } from 'nanoid';
+import { Message, SendMessageForm, ChatHeader } from '../index';
+import { GetJokeFromChuckNorris, randomDelay, options } from '../helpers/index';
 import { addToChatHistory } from '../../store/history-action';
-import { options } from '../helpers/GetDate';
+import s from './Chat.module.scss';
 
 const Chat = ({ id }) => {
   const messageHistory = useSelector(state => state[id]);

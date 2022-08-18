@@ -1,4 +1,4 @@
-export function SliceMessage (string){
+export default function SliceMessage (string){
   const dots = "...";
 
   if(string.length > 22){

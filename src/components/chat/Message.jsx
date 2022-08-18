@@ -1,6 +1,5 @@
 import s from './Messege.module.scss';
-import { formatDate } from '../helpers/GetDate';
-import { getTime } from '../helpers/GetTime';
+import { formatDate, getTime  } from '../helpers/index';
 
 const Message = ({ textMessage, date, time, src, name, myMessage }) => {
   return (

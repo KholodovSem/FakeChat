@@ -1,15 +1,11 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import MenuHeader from './MenuHeader';
-import Contact from './Contact';
-import Modal from '../modal/Modal';
-import FormNewContact from '../common/FormNewContact';
-import { SliceMessage } from '../helpers/SliceMessage';
+import { MenuHeader, Contact, Modal, FormNewContact } from '../index';
+import { SliceMessage, formatDate } from '../helpers/index';
 import { ReactComponent as AddIcon } from '../../image/Add icon.svg';
 import s from './MessengerMenu.module.scss';
 import 'react-toastify/dist/ReactToastify.css';
-import { formatDate } from '../helpers/GetDate';
 
 const MessengerMenu = ({ handleClick }) => {
   const persons = useSelector(state => Object.values(state));
