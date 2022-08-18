@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Reenbit-test-task/static/css/main.56f86291.css",
-    "main.js": "/Reenbit-test-task/static/js/main.95b2cfbb.js",
+    "main.css": "/Reenbit-test-task/static/css/main.5f9bbe66.css",
+    "main.js": "/Reenbit-test-task/static/js/main.0540bdd7.js",
     "static/media/user.svg": "/Reenbit-test-task/static/media/user.aea0183bcc50a1a087c846b8c42a4d38.svg",
     "index.html": "/Reenbit-test-task/index.html",
     "static/media/loupe.svg": "/Reenbit-test-task/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
@@ -10,11 +10,11 @@
     "static/media/close-icon.svg": "/Reenbit-test-task/static/media/close-icon.162f0299d90033f17db338a16c78f41f.svg",
     "static/media/photo-icon.svg": "/Reenbit-test-task/static/media/photo-icon.d582720d8fbd95e9b458187d1da983a6.svg",
     "static/media/rename-icon.svg": "/Reenbit-test-task/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
-    "main.56f86291.css.map": "/Reenbit-test-task/static/css/main.56f86291.css.map",
-    "main.95b2cfbb.js.map": "/Reenbit-test-task/static/js/main.95b2cfbb.js.map"
+    "main.5f9bbe66.css.map": "/Reenbit-test-task/static/css/main.5f9bbe66.css.map",
+    "main.0540bdd7.js.map": "/Reenbit-test-task/static/js/main.0540bdd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.56f86291.css",
-    "static/js/main.95b2cfbb.js"
+    "static/css/main.5f9bbe66.css",
+    "static/js/main.0540bdd7.js"
   ]
 }
