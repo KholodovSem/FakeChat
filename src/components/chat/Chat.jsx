@@ -6,7 +6,7 @@ import { addToChatHistory } from '../../store/history-action';
 import s from './Chat.module.scss';
 
 const Chat = ({ id }) => {
-  const messageHistory = useSelector(state => state[id]);
+  const messageHistory = useSelector(state => state.chatHistory[id]);
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {

@@ -1,0 +1,62 @@
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 20px;
+}
+
+.formTitle {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.label{
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.loginBtn {
+  width: 211px;
+
+  padding: 5px 0 5px 0;
+
+  background-color: transparent;
+  border: 1px solid black;
+
+  cursor: pointer;
+
+  transition: color 200ms linear 0ms, background-color 200ms linear 0ms;
+}
+
+.loginBtn:not(:first-of-type){
+  margin-bottom: 40px;
+}
+
+.loginBtn:first-of-type{
+  margin-bottom: 10px;
+}
+
+.loginBtn:hover{
+  background-color: coral;
+  color: white;
+}
+
+.authBtn {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.authBtn:not(:last-of-type){
+  margin-right: 30px;
+}
+
+.input {
+  padding: 5px 3px 5px 3px;
+}

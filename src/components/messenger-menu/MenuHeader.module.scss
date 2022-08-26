@@ -16,8 +16,23 @@
   position: relative;
 }
 
-.menuUserIcon {
+.menuUserBtn {
+  align-self: flex-start;
+
   margin-bottom: 25px;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.menuUserBtn:focus{
+  border: none;
+}
+
+.menuUserIcon {
+  width: 50px;
 }
 
 .menuLoupIcon {
@@ -64,3 +79,27 @@
   opacity: 0.4;
 }
 
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 18%;
+}
+
+.profileImage {
+  margin-bottom: 30px;
+}
+
+.firstSpan {
+  display: flex;
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+
+.secondSpan {
+  margin-right: 10px;
+
+  font-weight: 500;
+}

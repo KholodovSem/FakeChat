@@ -7,3 +7,4 @@ export {default as MenuHeader} from './messenger-menu/MenuHeader';
 export {default as Contact} from './messenger-menu/Contact';
 export {default as Modal} from './modal/Modal';
 export {default as FormNewContact} from './common/FormNewContact';
+export {default as LoginPage} from './views/LoginPage';

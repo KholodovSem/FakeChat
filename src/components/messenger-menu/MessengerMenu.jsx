@@ -8,14 +8,13 @@ import s from './MessengerMenu.module.scss';
 import 'react-toastify/dist/ReactToastify.css';
 
 const MessengerMenu = ({ handleClick }) => {
-  const persons = useSelector(state => Object.values(state));
+  const persons = useSelector(state => state.chatHistory);
 
   const [filter, setFilter] = useState('');
   const [showModal, setShowModal] = useState(false);
 
   const sortByDateAndTime = () => {
     const copyState = [...persons];
-    copyState.pop();
 
     return copyState.sort((a,b) => new Date(b?.messages[b?.messages?.length -1]?.date + ' ' + b?.messages[b?.messages?.length -1]?.time) - new Date(a?.messages[a?.messages?.length -1]?.date + ' ' + a?.messages[a?.messages?.length -1]?.time)
     )
