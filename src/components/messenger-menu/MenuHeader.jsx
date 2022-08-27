@@ -26,7 +26,7 @@ const MenuHeader = ({ filter, setFilter }) => {
   return (
     <div className={s.menuHeader}>
       <button className={s.menuUserBtn} onClick={onToggleModal}>
-        <img src={user.photo} alt='User photo' className={s.menuUserIcon} />
+        <img src={user.photo} alt='User' className={s.menuUserIcon} />
       </button>
       <label className={s.inputLabel}>
         <LoupIcon className={s.menuLoupIcon} />
