@@ -21,26 +21,20 @@ export const signInWithGoogle = () => {
 
 export const signUp = (email, password) => {
   createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
+    .then(() => {
       console.log("Registration success");
     })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+    .catch(() => {
       console.log("Registration error");
     });
 }
 
 export const signIn = (email, password) => {
   signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      const user = userCredential.user;
+    .then(() => {
       console.log("Login success");
     })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
+    .catch(() => {
       console.log("Login error");
     });
 }

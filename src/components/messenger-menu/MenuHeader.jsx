@@ -45,7 +45,7 @@ const MenuHeader = ({ filter, setFilter }) => {
       {modal ?
         <Modal onToggleModal={onToggleModal}>
           <div className={s.profileCard}>
-            <img src={user.photo} alt="User image" className={s.profileImage}/>
+            <img src={user.photo} alt="User" className={s.profileImage}/>
             <span className={s.firstSpan}><span className={s.secondSpan}>Email:</span> {user.email}</span>
             {user.displayName !== ''? <span className={s.firstSpan}><span className={s.secondSpan}>Name:</span> {user.displayName}</span> : null}
             <button onClick={() => {

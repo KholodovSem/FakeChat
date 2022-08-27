@@ -5,13 +5,12 @@ import { ReactComponent as GoogleIcon } from '../../image/google.svg';
 import s from './LoginPage.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setAuth } from '../../store/user-action';
 
 const LoginPage = () => {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
-  const userAuth = useSelector(state => state.user.userAuth);
   const dispatch = useDispatch();
   let navigate = useNavigate();
 
@@ -53,7 +52,7 @@ const LoginPage = () => {
     }));
     await signIn(login, password);
 
-    navigate("/", { replace: true });
+    navigate("/Reenbit-test-task", { replace: true });
 
 
     setLogin('');
@@ -104,7 +103,7 @@ const LoginPage = () => {
                       photoURL: result.user.photoURL,
                     },
                   }));
-                  navigate("/", { replace: true });
+                  navigate("/Reenbit-test-task", { replace: true });
                 }).catch((error) => {
                 alert(error);
               });
