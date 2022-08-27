@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Reenbit-test-task/static/css/main.5f9bbe66.css",
-    "main.js": "/Reenbit-test-task/static/js/main.0540bdd7.js",
-    "static/media/user.svg": "/Reenbit-test-task/static/media/user.aea0183bcc50a1a087c846b8c42a4d38.svg",
+    "main.css": "/Reenbit-test-task/static/css/main.023836b0.css",
+    "main.js": "/Reenbit-test-task/static/js/main.87e81aa9.js",
+    "static/media/google.svg": "/Reenbit-test-task/static/media/google.e4fd75a2e25351ae77ea43060e70e038.svg",
     "index.html": "/Reenbit-test-task/index.html",
     "static/media/loupe.svg": "/Reenbit-test-task/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
     "static/media/paper-plane.svg": "/Reenbit-test-task/static/media/paper-plane.44046163ff3fe70ce9ed75d2eb4398dc.svg",
@@ -10,11 +10,12 @@
     "static/media/close-icon.svg": "/Reenbit-test-task/static/media/close-icon.162f0299d90033f17db338a16c78f41f.svg",
     "static/media/photo-icon.svg": "/Reenbit-test-task/static/media/photo-icon.d582720d8fbd95e9b458187d1da983a6.svg",
     "static/media/rename-icon.svg": "/Reenbit-test-task/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
-    "main.5f9bbe66.css.map": "/Reenbit-test-task/static/css/main.5f9bbe66.css.map",
-    "main.0540bdd7.js.map": "/Reenbit-test-task/static/js/main.0540bdd7.js.map"
+    "static/media/facebook.svg": "/Reenbit-test-task/static/media/facebook.13aa0acfc52eb382665ff1e8737d69fc.svg",
+    "main.023836b0.css.map": "/Reenbit-test-task/static/css/main.023836b0.css.map",
+    "main.87e81aa9.js.map": "/Reenbit-test-task/static/js/main.87e81aa9.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f9bbe66.css",
-    "static/js/main.0540bdd7.js"
+    "static/css/main.023836b0.css",
+    "static/js/main.87e81aa9.js"
   ]
 }
