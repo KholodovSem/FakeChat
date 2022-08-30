@@ -15,14 +15,14 @@ export const App = () => {
 
   return (
     <Routes>
-      <Route path="/Reenbit-test-task"
+      <Route path="/FakeChat"
              element={user.userAuth?
         <div className={s.Messenger}>
         <MessengerMenu handleClick={handleClick}/>
         <Chat id={userId}/>
         </div>: <Navigate to="login"/>}
       />
-      <Route path='/Reenbit-test-task/login' element={<LoginPage />} />
+      <Route path='/FakeChat/login' element={<LoginPage />} />
     </Routes>
 
   );

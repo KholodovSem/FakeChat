@@ -52,7 +52,7 @@ const LoginPage = () => {
     }));
     await signIn(login, password);
 
-    navigate("/Reenbit-test-task", { replace: true });
+    navigate("/FakeChat", { replace: true });
 
 
     setLogin('');
@@ -103,7 +103,7 @@ const LoginPage = () => {
                       photoURL: result.user.photoURL,
                     },
                   }));
-                  navigate("/Reenbit-test-task", { replace: true });
+                  navigate("/FakeChat", { replace: true });
                 }).catch((error) => {
                 alert(error);
               });
