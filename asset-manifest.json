@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Reenbit-test-task/static/css/main.023836b0.css",
-    "main.js": "/Reenbit-test-task/static/js/main.87e81aa9.js",
-    "static/media/google.svg": "/Reenbit-test-task/static/media/google.e4fd75a2e25351ae77ea43060e70e038.svg",
-    "index.html": "/Reenbit-test-task/index.html",
-    "static/media/loupe.svg": "/Reenbit-test-task/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
-    "static/media/paper-plane.svg": "/Reenbit-test-task/static/media/paper-plane.44046163ff3fe70ce9ed75d2eb4398dc.svg",
-    "static/media/Add icon.svg": "/Reenbit-test-task/static/media/Add icon.d4221fbcaad057844b64e13f51bbeff1.svg",
-    "static/media/close-icon.svg": "/Reenbit-test-task/static/media/close-icon.162f0299d90033f17db338a16c78f41f.svg",
-    "static/media/photo-icon.svg": "/Reenbit-test-task/static/media/photo-icon.d582720d8fbd95e9b458187d1da983a6.svg",
-    "static/media/rename-icon.svg": "/Reenbit-test-task/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
-    "static/media/facebook.svg": "/Reenbit-test-task/static/media/facebook.13aa0acfc52eb382665ff1e8737d69fc.svg",
-    "main.023836b0.css.map": "/Reenbit-test-task/static/css/main.023836b0.css.map",
-    "main.87e81aa9.js.map": "/Reenbit-test-task/static/js/main.87e81aa9.js.map"
+    "main.css": "/FakeChat/static/css/main.023836b0.css",
+    "main.js": "/FakeChat/static/js/main.5a491158.js",
+    "static/media/google.svg": "/FakeChat/static/media/google.e4fd75a2e25351ae77ea43060e70e038.svg",
+    "static/media/loupe.svg": "/FakeChat/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
+    "index.html": "/FakeChat/index.html",
+    "static/media/paper-plane.svg": "/FakeChat/static/media/paper-plane.44046163ff3fe70ce9ed75d2eb4398dc.svg",
+    "static/media/Add icon.svg": "/FakeChat/static/media/Add icon.d4221fbcaad057844b64e13f51bbeff1.svg",
+    "static/media/close-icon.svg": "/FakeChat/static/media/close-icon.162f0299d90033f17db338a16c78f41f.svg",
+    "static/media/photo-icon.svg": "/FakeChat/static/media/photo-icon.d582720d8fbd95e9b458187d1da983a6.svg",
+    "static/media/rename-icon.svg": "/FakeChat/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
+    "static/media/facebook.svg": "/FakeChat/static/media/facebook.13aa0acfc52eb382665ff1e8737d69fc.svg",
+    "main.023836b0.css.map": "/FakeChat/static/css/main.023836b0.css.map",
+    "main.5a491158.js.map": "/FakeChat/static/js/main.5a491158.js.map"
   },
   "entrypoints": [
     "static/css/main.023836b0.css",
-    "static/js/main.87e81aa9.js"
+    "static/js/main.5a491158.js"
   ]
 }
