@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FakeChat/static/css/main.023836b0.css",
-    "main.js": "/FakeChat/static/js/main.5a491158.js",
+    "main.js": "/FakeChat/static/js/main.8389692a.js",
     "static/media/google.svg": "/FakeChat/static/media/google.e4fd75a2e25351ae77ea43060e70e038.svg",
     "static/media/loupe.svg": "/FakeChat/static/media/loupe.1a83261c057181b38fef3fcf0dd43b64.svg",
     "index.html": "/FakeChat/index.html",
@@ -12,10 +12,10 @@
     "static/media/rename-icon.svg": "/FakeChat/static/media/rename-icon.9bf8c1cc0837c9913b81137da272caf3.svg",
     "static/media/facebook.svg": "/FakeChat/static/media/facebook.13aa0acfc52eb382665ff1e8737d69fc.svg",
     "main.023836b0.css.map": "/FakeChat/static/css/main.023836b0.css.map",
-    "main.5a491158.js.map": "/FakeChat/static/js/main.5a491158.js.map"
+    "main.8389692a.js.map": "/FakeChat/static/js/main.8389692a.js.map"
   },
   "entrypoints": [
     "static/css/main.023836b0.css",
-    "static/js/main.5a491158.js"
+    "static/js/main.8389692a.js"
   ]
 }
